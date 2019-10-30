@@ -1,0 +1,17 @@
+{
+    "browsers": ["chrome"],
+    "src": "regression",
+    "reporter": [
+        {
+            "name": "spec"
+        },
+        {
+            "name": "json",
+            "output": "results/reports/report.json"
+        }
+    ],
+    "screenshotPath": "results/screenshots/",
+    "takeScreenshotsOnFails": true,
+    "screenshotPathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png",
+    "tsConfigPath": "./tsconfig.json"
+}
